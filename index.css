@@ -1,0 +1,107 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.hero {
+  background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(52, 152, 219, 0.8)),
+    url("hero-bg.jpg") center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+
+.about {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills,
+.projects,
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.sk {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  column-gap: 20px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.skill-name,
+.skill-level {
+  flex: 1;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.projects .project {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects .project:hover {
+  transform: scale(1.05);
+}
+
+.contact p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .skill {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-name,
+  .skill-level {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
